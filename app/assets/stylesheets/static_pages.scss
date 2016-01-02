@@ -1,3 +1,122 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+	font-family: 'Nickainley';
+	src:font-url('Nickainley-Normal.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-headings: 'Nickainley', sans-serif;
+$font-body: raleway, sans-serif;
+$primary-color: #fff;
+$secondary-color: #807182;
+$secondary-transparent: rgba(128, 113, 130, 0.9);
+
+body {
+	font: 100% $font-body;
+	color: $primary-color;
+	font-size: 1.8em;
+	background: image-url('knit-869221_1920.jpg') no-repeat center center fixed;
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	font: 100% $font-headings;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+div.nav {
+	position: fixed;
+	background-color: $secondary-transparent;
+	height: 60px;
+	width: 100%;
+	top: 0;
+}
+
+.nav {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-top: 10px;
+		margin-right: 20px;
+		float: right;
+	}
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	li {
+		display: inline;
+		padding-right: 25px;
+		text-transform: uppercase;
+		text-align: right;
+		letter-spacing: 1.3px;
+	}
+}
+
+.jumbotron {
+	background: none;
+	margin-top: 75px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 0;
+	h1 {
+		font-size: 5em;
+	}
+}
+
+div.feature {
+	margin: 75px auto 100px;
+	img {
+		margin: 15px auto;
+	}
+	p {
+		letter-spacing: 1.3px;
+		text-transform: uppercase;
+		font-size: 1.1em;
+	}
+}
+
+div.container.about {
+	background-color: $secondary-transparent;
+	padding: 20px 75px;
+}
+
+.circle.contact {
+	margin: 40px auto 15px;
+	img {
+		margin: 0 auto;
+	}
+}
+
+.footer {
+	background-color: $secondary-transparent;
+	margin-top: 80px;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	padding-top: 10px;
+}
+
+
