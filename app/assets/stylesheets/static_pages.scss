@@ -9,11 +9,13 @@
 	font-style: normal;
 }
 
+
 $font-headings: 'Nickainley', sans-serif;
-$font-body: raleway, sans-serif;
+$font-body: poiret-one, sans-serif;
 $primary-color: #fff;
-$secondary-color: #807182;
-$secondary-transparent: rgba(128, 113, 130, 0.9);
+$primary-transparent: rgba(255, 255, 255, 0.5);
+$accent-color: #807182;
+$accent-transparent: rgba(128, 113, 130, 0.9);
 
 body {
 	font: 100% $font-body;
@@ -48,7 +50,7 @@ h4 {
 
 div.nav {
 	position: fixed;
-	background-color: $secondary-transparent;
+	background-color: $accent-transparent;
 	height: 60px;
 	width: 100%;
 	top: 0;
@@ -88,30 +90,45 @@ div.nav {
 
 div.feature {
 	margin: 75px auto 100px;
-	img {
-		margin: 15px auto;
-	}
 	p {
 		letter-spacing: 1.3px;
-		text-transform: uppercase;
 		font-size: 1.1em;
 	}
 }
 
+.circle.index {
+	background-color: $accent-transparent;
+	height: 225px;
+	width: 225px;
+	border-radius: 100%;
+	border: 0px solid #000000;
+	margin: 15px auto;
+	img {
+		margin: 15px auto;
+	}
+}
+
 div.container.about {
-	background-color: $secondary-transparent;
+	background-color: $accent-transparent;
 	padding: 20px 75px;
+	border-radius: 15px;
+	border: 0px solid #000000;
 }
 
 .circle.contact {
+	height: 200px;
+	width: 200px;
 	margin: 40px auto 15px;
+	background-color: $accent-transparent;
+	border-radius: 100%;
+	border: 0px solid #000000;
 	img {
 		margin: 0 auto;
 	}
 }
 
 .footer {
-	background-color: $secondary-transparent;
+	background-color: $accent-transparent;
 	margin-top: 80px;
 	bottom: 0px;
 	height: 50px;
