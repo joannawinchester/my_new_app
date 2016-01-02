@@ -9,13 +9,21 @@
 	font-style: normal;
 }
 
+$break-small: 767px;
+$break-medium: 768px;
 
 $font-headings: 'Nickainley', sans-serif;
 $font-body: poiret-one, sans-serif;
+
 $primary-color: #fff;
 $primary-transparent: rgba(255, 255, 255, 0.5);
 $accent-color: #807182;
 $accent-transparent: rgba(128, 113, 130, 0.9);
+$accent-color-2: rgba(50, 50, 50, 0.8);
+
+$transition: all 500ms ease-in;
+
+
 
 body {
 	font: 100% $font-body;
@@ -32,7 +40,12 @@ h3 {
 }
 
 h1 {
-	font-size: 7em;
+	@media screen and (max-width: $break-small) {
+		font-size: 5em;
+	}
+	@media screen and (min-width: $break-medium) {
+		font-size: 7em;
+	}
 }
 
 h2 {
@@ -48,32 +61,28 @@ h4 {
 	font-weight: bold;
 }
 
-div.nav {
+
+.nav {
 	position: fixed;
 	background-color: $accent-transparent;
 	height: 60px;
 	width: 100%;
 	top: 0;
-}
-
-.nav {
-	ul {
+	.menu {
+		height: 100%;
 		list-style: none;
-		padding-left: 0;
-		margin-top: 10px;
-		margin-right: 20px;
-		float: right;
+		padding: 0;
+		@media screen and (min-width: $break-medium)  {
+			text-align: right;
+			&:last-child { margin-right: 20px; }
+		}
 	}
-	a {
-		color: #fff;
-		text-decoration: none;
-	}
-	li {
-		display: inline;
-		padding-right: 25px;
-		text-transform: uppercase;
-		text-align: right;
-		letter-spacing: 1.3px;
+	.menu_item {
+		height: 100%;
+		display: inline-block;
+		padding: 10px 17px;
+		transition: $transition;
+		&:hover { background-color: $accent-color-2 }
 	}
 }
 
@@ -84,11 +93,16 @@ div.nav {
 	padding-right: 30px;
 	padding-bottom: 0;
 	h1 {
-		font-size: 7em;
+		@media screen and (max-width: $break-small) {
+			font-size: 5em;
+		}
+		@media screen and (min-width: $break-medium) {
+			font-size: 7em;
+		}
 	}
 }
 
-div.feature {
+.feature {
 	margin: 75px auto 100px;
 	p {
 		letter-spacing: 1.3px;
@@ -103,9 +117,14 @@ div.feature {
 	border-radius: 100%;
 	border: 0px solid #000000;
 	margin: 55px auto 15px;
+	transition: $transition;
+	&:hover {
+		background-color: $accent-color-2;
+	}
 	img {
 		margin: 15px auto;
 	}
+
 }
 
 div.container.about {
@@ -121,7 +140,11 @@ div.container.about {
 	margin: 100px auto 15px;
 	background-color: $accent-transparent;
 	border-radius: 100%;
+	transition: $transition;
 	border: 0px solid #000000;
+	&:hover {
+		background-color: $accent-color-2;
+	}
 	img {
 		margin: 0 auto;
 	}

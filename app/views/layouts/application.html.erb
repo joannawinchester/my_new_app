@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Nameofapp</title>
+  <title>Stitch Philly</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -16,11 +16,16 @@
 <body>
 
 <div class="nav nav-bar">
-	<ul>
-		<li><a href="/static_pages/index"><%= image_tag("home.png", height: '40', width: '40') %></a></li>
+	<div class="menu">
+    <div class="menu_item">
+		  <li><a href="/static_pages/index"><%= image_tag("home.png", height: '40', width: '40') %></a></li>
+    </div>
+    <div class="menu_item">
 		<li><a href="/static_pages/about"><%= image_tag("about.png", height: '40', width: '40') %></a></li>
-		<li><a href="/static_pages/contact"><%= image_tag("contact.png", height: '40', width: '40') %></a></li>
-	</ul>
+    </div>
+		<div class="menu_item"><li><a href="/static_pages/contact"><%= image_tag("contact.png", height: '40', width: '40') %></a></li>
+    </div>
+	</div>
 </div>
 
 <%= yield %>
