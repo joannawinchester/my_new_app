@@ -79,7 +79,7 @@ div.nav {
 
 .jumbotron {
 	background: none;
-	margin-top: 75px;
+	margin-top: 125px;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 0;
@@ -102,7 +102,7 @@ div.feature {
 	width: 225px;
 	border-radius: 100%;
 	border: 0px solid #000000;
-	margin: 15px auto;
+	margin: 55px auto 15px;
 	img {
 		margin: 15px auto;
 	}
@@ -118,7 +118,7 @@ div.container.about {
 .circle.contact {
 	height: 200px;
 	width: 200px;
-	margin: 40px auto 15px;
+	margin: 100px auto 15px;
 	background-color: $accent-transparent;
 	border-radius: 100%;
 	border: 0px solid #000000;
@@ -129,7 +129,7 @@ div.container.about {
 
 .footer {
 	background-color: $accent-transparent;
-	margin-top: 80px;
+	margin-top: 150px;
 	bottom: 0px;
 	height: 50px;
 	width: 100%;
