@@ -2,11 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+@font-face {
+	font-family: 'Nickainley';
+	src:font-url('Nickainley-Normal.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$break-small: 767px;
+$break-medium: 768px;
+
+$font-headings: 'Nickainley', sans-serif;
+$font-body: poiret-one, sans-serif;
+
+$primary-color: #fff;
+$primary-transparent: rgba(255, 255, 255, 0.5);
+$accent-color: #807182;
+$accent-transparent: rgba(128, 113, 130, 0.9);
+$accent-color-2: rgba(50, 50, 50, 0.8);
+
+$transition: all 500ms ease-in;
+
+
+
 .container.products {
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	background-color: $accent-color-2;
+	border-radius: 15px;
+	border: 0px solid #000000;
 }
 
 .row.products {
