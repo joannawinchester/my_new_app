@@ -31,11 +31,11 @@ $transition: all 500ms ease-in;
 	margin: 0;
 	padding: 0;
 	text-align: center;
-	background-color: $accent-color-2;
-	border-radius: 15px;
-	border: 0px solid #000000;
 }
 
 .row.products {
 	margin: 10% 5% 10% 5%;
+	background-color: $accent-color-2;
+	border-radius: 15px;
+	border: 0px solid #000000;
 }
