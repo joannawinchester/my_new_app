@@ -24,19 +24,92 @@ $accent-color-2: rgba(50, 50, 50, 0.8);
 
 $transition: all 500ms ease-in;
 
+$break-small: 767px;
+$break-medium: 768px;
 
 
 .container.products {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+	width: 95%;
+	@media screen and (max-width: $break-small) {
+		margin-top: 60px;
+	}
+	@media screen and (min-width: $break-medium) {
+		margin-top: 100px;
+		padding: 0;
+	}
 }
 
-.row.products {
-	margin: 10% 5% 10% 5%;
-	padding: 10px 15px;
+div.products.columns {
 	background-color: $accent-color-2;
+	border-radius: 10px;
+	border: 0 solid #000000;
+	padding: 10px 20px 30px 20px;
+	@media screen and (min-width: $break-medium) {
+		&.col-md-4 {
+			width: 31%;
+			margin: 1% 1%;
+		}
+	}
+	@media screen and (max-width: $break-small) {
+		&.col-sm-12 {
+			width: 90%;
+			margin: 30px 15px;
+		}
+	}
+}
+
+.description {
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+.note {
+	padding: 20px;
+	font-style: italic;
+}
+
+.price {
+	padding: 20px;
+	border-top: 1px solid #fff;
+}
+
+.btn.btn-default {
+	padding: 0px 60px;
+	text-transform: uppercase;
+}
+
+input, textarea {
+	color: #323232;
+}
+
+
+
+.container.show,
+.container.edit-form {
+	width: 60%;
+	margin-top: 80px;
+	padding: 30px 30px 15px;
+	text-align: left;
+	background-color: $accent-transparent;
 	border-radius: 15px;
 	border: 0px solid #000000;
+	h4 {
+		padding-bottom: 15px;
+		border-bottom: 1px solid #fff;
+	}
+	.field {
+		input {
+			width: 100%;
+		}
+		textarea {
+			width: 100%;
+			height: 60px;
+		}
+	}
 }
+
+
+
+
+

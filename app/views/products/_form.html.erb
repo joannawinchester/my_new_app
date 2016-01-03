@@ -11,9 +11,15 @@
     </div>
   <% end %>
 
+<div class="container edit-form">
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :subtitle %><br>
+    <%= f.text_field :subtitle %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
@@ -23,7 +29,17 @@
     <%= f.label :image_url %><br>
     <%= f.text_field :image_url %>
   </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_field :note %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+
+</div>

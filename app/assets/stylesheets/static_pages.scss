@@ -41,7 +41,7 @@ h3 {
 
 h1 {
 	@media screen and (max-width: $break-small) {
-		font-size: 5em;
+		font-size: 4em;
 	}
 	@media screen and (min-width: $break-medium) {
 		font-size: 7em;
@@ -49,7 +49,12 @@ h1 {
 }
 
 h2 {
-	font-size: 2.5em;
+	@media screen and (max-width: $break-small) {
+		font-size: 2em;
+	}
+	@media screen and (min-width: $break-medium) {
+		font-size: 2.5em;
+	}
 }
 
 h3 {
@@ -88,13 +93,18 @@ h4 {
 
 .jumbotron {
 	background: none;
-	margin-top: 125px;
+	@media screen and (max-width: $break-small){
+		margin-top: 75px;
+	}
+	@media screen and (min-width: $break-medium){
+		margin-top: 125px;
+	}
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-bottom: 0;
 	h1 {
 		@media screen and (max-width: $break-small) {
-			font-size: 5em;
+			font-size: 4em;
 		}
 		@media screen and (min-width: $break-medium) {
 			font-size: 7em;
@@ -128,7 +138,7 @@ h4 {
 }
 
 div.container.about {
-	background-color: $accent-transparent;
+	background-color: $accent-color-2;
 	padding: 20px 75px;
 	border-radius: 15px;
 	border: 0px solid #000000;
@@ -150,7 +160,7 @@ div.container.about {
 	}
 }
 
-.footer {
+.footer.template {
 	background-color: $accent-transparent;
 	margin-top: 150px;
 	bottom: 0px;
