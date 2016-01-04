@@ -113,7 +113,7 @@ h4 {
 }
 
 .feature {
-	margin: 75px auto 100px;
+	margin: 50px auto 100px;
 	p {
 		letter-spacing: 1.3px;
 		font-size: 1.1em;
@@ -126,7 +126,7 @@ h4 {
 	width: 225px;
 	border-radius: 100%;
 	border: 0px solid #000000;
-	margin: 55px auto 15px;
+	margin: 35px auto 15px;
 	transition: $transition;
 	&:hover {
 		background-color: $accent-color-2;
