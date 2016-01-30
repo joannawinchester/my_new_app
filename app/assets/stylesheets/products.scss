@@ -28,7 +28,7 @@ $break-small: 767px;
 $break-medium: 768px;
 
 
-.container.products {
+.container.rev-lines {
 	width: 95%;
 	@media screen and (max-width: $break-small) {
 		margin-top: 60px;
@@ -39,7 +39,7 @@ $break-medium: 768px;
 	}
 }
 
-div.products.columns {
+div.rev-lines.columns {
 	background-color: $accent-color-2;
 	border-radius: 10px;
 	border: 0 solid #000000;

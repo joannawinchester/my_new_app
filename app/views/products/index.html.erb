@@ -5,21 +5,9 @@
 </div>
 
 
-<div class="container products">
+<div class="container rev-lines">
     <% @products.each do |product| %>
-      <div class="products columns col-sm-12 col-md-4">
-        <h2 class="title"><%= product.name %></h2>
-        <h4 class="subtitle"><%= product.subtitle %></h4>
-        <%= image_tag(product.image_url, alt: "Product Image" )%>
-        <p class="description"><%= product.description %></p>
-        <p class="note"><%= product.note %></p>
-        <h4 class="price">$<%= product.price %></h4>
-        <footer class="products footer">
-          <small class="text-muted"><%= link_to 'Show', product %></small>
-          <small class="text-muted"><%= link_to 'Edit', edit_product_path(product) %></small>
-          <small class="text-muted"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></small>
-        </footer>
-      </div>
+      <%= render @products %>
     <% end %>
 </div><!-- /container -->
 

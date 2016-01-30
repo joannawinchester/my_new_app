@@ -163,6 +163,19 @@ div.container.about {
 	}
 }
 
+.carousel-inner {
+	.item img {
+		margin: 40px auto 80px;
+	}
+	.carousel-caption {
+		padding-top: 50px;
+		bottom: -60px;
+	}
+	.carousel-indicators {
+		margin-top: 20px;
+	}
+}
+
 .footer.template {
 	background-color: $accent-transparent;
 	margin-top: 150px;
