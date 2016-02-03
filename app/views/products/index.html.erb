@@ -6,9 +6,7 @@
 
 
 <div class="container rev-lines">
-    <% @products.each do |product| %>
-      <%= render @products %>
-    <% end %>
+    <%= render partial: "product", collection: @products %>
 </div><!-- /container -->
 
 
