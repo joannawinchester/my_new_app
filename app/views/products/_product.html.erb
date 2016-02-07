@@ -5,8 +5,9 @@
   <p class="description"><%= product.description %></p>
   <p class="note"><%= product.note %></p>
   <h4 class="price">$<%= product.price %></h4>
+  <h4 class="details"><%= link_to 'Details', product_path(product) %></h4>
   <footer class="rev-lines footer">
-    <small class="text-muted"><%= link_to 'Show', product %></small>
+    <small class="text-muted"><%= link_to 'Show', product_path(product) %></small>
     <small class="text-muted"><%= link_to 'Edit', edit_product_path(product) %></small>
     <small class="text-muted"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></small>
   </footer>

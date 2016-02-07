@@ -134,7 +134,18 @@ h4 {
 	img {
 		margin: 15px auto;
 	}
+}
 
+p.book_lesson a {
+	color: $primary-color;
+	text-decoration: none;
+	transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+	&:hover {
+		font-weight: bold;
+		text-decoration: underline;
+	}
 }
 
 div.container.about {
@@ -164,16 +175,22 @@ div.container.about {
 }
 
 .carousel-inner {
-	.item img {
-		margin: 40px auto 80px;
+	img {
+		margin: 25px auto 30px;
 	}
-	.carousel-caption {
-		padding-top: 50px;
-		bottom: -60px;
+
+	h2 {
+		margin-bottom: 0;
+		padding-bottom: 10px;
 	}
-	.carousel-indicators {
-		margin-top: 20px;
-	}
+}
+
+h4.link_to_product {
+	margin-bottom: 60px;
+}
+
+.link_to_product a {
+	color: #fff;
 }
 
 .footer.template {
