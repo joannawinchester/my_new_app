@@ -50,5 +50,6 @@ end
 group :production do
 	gem 'rails_12factor'
 	gem 'pg'
+	ruby '2.2.1'
 end
 
