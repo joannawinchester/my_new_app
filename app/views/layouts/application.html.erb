@@ -17,16 +17,23 @@
 
 <div class="nav nav-bar">
 	<div class="menu">
-    <div class="menu_item">
+    <div class="menu_item shadows">
 		  <li><%= link_to image_tag("home.png", height: '40', width: '40'), static_pages_index_path %></li>
     </div>
-    <div class="menu_item">
+    <div class="menu_item shadows">
       <li><%= link_to image_tag("sweater.png", height: '40', width: '40'), products_path %></li>
     </div>
-    <div class="menu_item">
+    <div class="menu_item shadows">
 		<li><%= link_to image_tag("about.png", height: '40', width: '40'), static_pages_about_path %></li>
     </div>
-		<div class="menu_item"><li><%= link_to image_tag("contact.png", height: '40', width: '40'), static_pages_contact_path %></li>
+		<div class="menu_item shadows"><li><%= link_to image_tag("contact.png", height: '40', width: '40'), static_pages_contact_path %></li>
+    </div>
+    <div class="menu_item navbar-form navbar-right" id="search-form" role="search">
+      <li class="search-form"><%= form_tag("/products", method: "get") do %>
+          <%= text_field_tag(:q, placeholder="Search for...") %>
+          <%= submit_tag("") %>
+        <% end %>
+      </li>
     </div>
 	</div>
 </div>
