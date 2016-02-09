@@ -190,6 +190,63 @@ div.container.about {
 	}
 }
 
+/* ----- CONTACT FORM ----- */
+
+h1.contact-us {
+	margin-top: 150px;
+}
+
+.form-group {
+	text-align: left;
+}
+
+.col-md-12.contact {
+	@media screen and (max-width: $break-small) {
+		margin: 10px 5%;
+		width: 90%;
+	}
+	@media screen and (min-width: $break-medium) {
+		width: 60%;
+		margin: 10px 20%;
+	}
+}
+
+button.contact {
+	background-image: none;
+	background-color: $primary-color;
+	border: none;
+	border-radius: 5px;
+	&>input {
+		padding: 0;
+		margin: 0;
+		background-image: none;
+		width: 100px; height: 30px;
+		text-align: center;
+	}
+}
+
+
+/* ----- THANK YOU ----- */
+
+h1.thankyou {
+	margin-top: 150px;
+	margin-bottom: 75px;
+}
+p.thankyou{
+	margin-bottom: 50px;
+}
+
+button.thankyou {
+	padding: 10px 50px;
+	border: none;
+	border-radius: 5px;
+	background-color: $primary-color;
+	margin-bottom: 70px;
+}
+
+
+/* ----- LANDING PAGE - FEATURED PRODUCTS ----- */
+
 .carousel-inner {
 	img {
 		margin: 25px auto 30px;
@@ -208,6 +265,9 @@ h4.link_to_product {
 .link_to_product a {
 	color: #fff;
 }
+
+
+/* ----- FOOTER ----- */
 
 .footer.template {
 	background-color: $accent-transparent;
