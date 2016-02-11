@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   	@name = params[:name]
   	@email = params[:email]
   	@message = params[:message]
-    UserMailer.Contact_form(@email, @name, @message).deliver_now
+    UserMailer.contact_form(@email, @name, @message).deliver_now
   	#ActionMailer::Base.mail(:from => @email, 
   		#:to => 'joannawinchester@gmail.com',
   		#:subject => "A new contact form message from #{@name}",
