@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stitch Philly</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="//use.edgefonts.net/poiret-one.js"></script> 
+
+  <meta name="viewport" content="width=device-width, initial=scale=1">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="nav nav-bar">
+	<div class="menu">
+    <div class="menu_item shadows">
+		  <li><%= link_to image_tag("home.png", height: '40', width: '40'), static_pages_index_path %></li>
+    </div>
+    <div class="menu_item shadows">
+      <li><%= link_to image_tag("sweater.png", height: '40', width: '40'), products_path %></li>
+    </div>
+    <div class="menu_item shadows">
+		<li><%= link_to image_tag("about.png", height: '40', width: '40'), static_pages_about_path %></li>
+    </div>
+		<div class="menu_item shadows"><li><%= link_to image_tag("contact.png", height: '40', width: '40'), static_pages_contact_path %></li>
+    </div>
+    <div class="menu_item navbar-form navbar-right" id="search-form" role="search">
+      <li class="search-form"><%= form_tag("/products", method: "get") do %>
+          <%= text_field_tag(:q, placeholder="Search for...") %>
+          <%= submit_tag("") %>
+        <% end %>
+      </li>
+    </div>
+	</div>
+</div>
+
+<%= yield %>
+
+<div class="container">
+  <div class="row">
+
+  </div>
+</div>
+
+<div class="footer template">
+	<p>&copy; 2016 Stitch Philly</p>
+</div>
+
+<!-- JAVASCRIPT FILES -->
+
+
+</body>
+</html>

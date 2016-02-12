@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<div class="jumbotron">
+  <h1>Services & Products</h1>
+</div>
+
+
+<div class="container rev-lines">
+    <%= render partial: "product", collection: @products %>
+</div><!-- /container -->
+
+
+<br>
+
+
+<div class="btn btn-new"><%= link_to 'New Product', new_product_path %></div>
