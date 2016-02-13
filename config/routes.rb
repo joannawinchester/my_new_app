@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  root 'static_pages#about'
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  resources :users
+  root 'static_pages#index'
 
   resources :products
 

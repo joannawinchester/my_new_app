@@ -19,6 +19,7 @@ $primary-color: #fff;
 $primary-transparent: rgba(255, 255, 255, 0.5);
 $accent-color: #807182;
 $accent-transparent: rgba(128, 113, 130, 0.9);
+$accent-transparent-100: rgba(128, 113, 130, 1);
 $accent-color-2: rgba(50, 50, 50, 0.8);
 
 $transition: all 500ms ease-in;
@@ -67,6 +68,8 @@ h4 {
 }
 
 
+/* ----- NAVIGATION ----- */
+
 .nav {
 	position: fixed;
 	background-color: $accent-transparent;
@@ -82,15 +85,28 @@ h4 {
 			&:last-child { margin-right: 20px; }
 		}
 	}
-	.menu_item {
+	.menu_item li {
 		height: 100%;
 		display: inline-block;
 		padding: 10px 17px;
 		transition: $transition;
-		&.shadows:hover { background-color: $accent-color-2; }
+		&:hover { background-color: $accent-color-2; }
 	}
 }
 
+.search-form {
+	margin: 5px 10px;
+	& input#q {
+		top: -5px;
+	}
+	& input[type="submit"] {
+		display: inline-block;
+		background: url("search.png") no-repeat center center;
+		height: 30px; width: 30px;
+		padding: 5px;
+		border: none;
+	}
+}
 
 div.menu_item.navbar-form.navbar-right {
 	padding-top: 0;
@@ -101,11 +117,27 @@ div.menu_item.navbar-form.navbar-right {
 	}
 }
 
-input[type="submit"] {
-	background: url("search.png") no-repeat center center;
-	height: 25px; width: 25px;
-	border: none;
+ul.nav.pull-left {
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	left: 10px;
+	& li.login a {
+		height: 60px;
+		color: $primary-color;
+		background-color: $accent-transparent-100;
+		padding-top: 20px;
+		transition: $transition;
+		-moz-transition: $transition;
+		-webkit-transition: $transition;
+		&:hover {
+			background-color: $accent-color-2;
+		}
+	}
 }
+
+
+/* ----- JUMBOTRON ----- */
 
 .jumbotron {
 	background: none;
@@ -127,6 +159,9 @@ input[type="submit"] {
 		}
 	}
 }
+
+
+/* ----- INDEX PAGE ----- */
 
 .feature {
 	margin: 50px auto 100px;
@@ -164,6 +199,9 @@ p.book_lesson a {
 	}
 }
 
+
+/* ----- ABOUT PAGE ----- */
+
 div.container.about {
 	background-color: $accent-color-2;
 	padding: 20px 75px;
@@ -173,6 +211,9 @@ div.container.about {
 		font-size: 1.0em;
 	}
 }
+
+
+/* ----- CONTACT PAGE ----- */
 
 .circle.contact {
 	height: 200px;
@@ -264,6 +305,58 @@ h4.link_to_product {
 
 .link_to_product a {
 	color: #fff;
+}
+
+
+
+/* ----- SIGN-IN ----- */
+
+h2.sign-in {
+	font-size: 4em;
+	margin: 65px auto 45px;
+}
+
+.field.sign-in input {
+	display: inline-block;
+	border-radius: 7px;
+	padding: 7px 10px;
+	width: 300px;
+	box-shadow: none;
+	border: 0px;
+}
+
+div.remember {
+	margin: 25px auto;
+	font-size: 1.1em;
+}
+
+.actions.sign-in input {
+	margin-bottom: 25px;
+	background-color: $primary-color;
+	border: 0px;
+	border-radius: 7px;
+	box-shadow: none;
+	padding: 7px 30px;
+	transition: $transition;
+	-moz-transition: $transition;
+	-webkit-transition: $transition;
+	&:hover {
+		background-color: $accent-color;
+		color: $primary-color;
+	}
+}
+
+.sign-up {
+	margin-top: 25px;
+}
+
+div.sign-in.bottom-link {
+	margin-bottom: 200px;
+	& a {
+		color: $primary-color;
+		font-size: 1.1em;
+		text-align: left;
+	}
 }
 
 

@@ -16,27 +16,32 @@
 <body>
 
 <div class="nav nav-bar">
-	<div class="menu">
-    <div class="menu_item shadows">
+	<div class="nav-collapse">
+    <ul class="menu menu_item">
 		  <li><%= link_to image_tag("home.png", height: '40', width: '40'), static_pages_index_path %></li>
-    </div>
-    <div class="menu_item shadows">
       <li><%= link_to image_tag("sweater.png", height: '40', width: '40'), products_path %></li>
-    </div>
-    <div class="menu_item shadows">
-		<li><%= link_to image_tag("about.png", height: '40', width: '40'), static_pages_about_path %></li>
-    </div>
-		<div class="menu_item shadows"><li><%= link_to image_tag("contact.png", height: '40', width: '40'), static_pages_contact_path %></li>
-    </div>
-    <div class="menu_item navbar-form navbar-right" id="search-form" role="search">
-      <li class="search-form"><%= form_tag("/products", method: "get") do %>
-          <%= text_field_tag(:q, placeholder="Search for...") %>
-          <%= submit_tag("") %>
+		  <li><%= link_to image_tag("about.png", height: '40', width: '40'), static_pages_about_path %></li>
+		  <li><%= link_to image_tag("contact.png", height: '40', width: '40'), static_pages_contact_path %></li>
+      <li class="navbar-form navbar-right search-form" role="search"><%= form_tag("/products", method: "get") do %>
+            <%= text_field_tag(:q, placeholder="Search for...") %>
+            <%= submit_tag("") %>
+          <% end %>
+      </li>
+    </ul>
+    <ul class="nav pull-left">
+      <li class="login">
+        <% if user_signed_in? %>
+          <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+        <% else %>
+          <%= link_to('Login', new_user_session_path) %>
         <% end %>
       </li>
-    </div>
+    </ul>
 	</div>
 </div>
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
 
 <%= yield %>
 

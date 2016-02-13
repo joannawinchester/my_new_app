@@ -1,0 +1,25 @@
+<h2 class="sign-in">Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div class="field sign-in">
+    <%= f.email_field :email, placeholder: "Email", required: true, autofocus: true %>
+  </div>
+
+  <div class="field sign-in">
+    <%= f.password_field :password, placeholder: "Password - 8 characters minimum", required: true, autocomplete: "off" %>
+  </div>
+
+  <div class="field sign-in">
+    <%= f.password_field :password_confirmation, placeholder: "Password confirmation", required: true, autocomplete: "off" %>
+  </div>
+
+  <div class="actions sign-in sign-up">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<div class="sign-in bottom-link">
+  <%= render "devise/shared/links" %>
+</div>
