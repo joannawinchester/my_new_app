@@ -1,0 +1,656 @@
+@font-face {
+  font-family: 'Nickainley';
+  src: url(/assets/Nickainley-Normal-56009d65186c25d40f91b94b786830838a33db94e2cc4871f3aa101eb8cfff64.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 31, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.container.rev-lines {
+  width: 95%;
+}
+@media screen and (max-width: 767px) {
+  /* line 31, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+  .container.rev-lines {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 31, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+  .container.rev-lines {
+    margin-top: 100px;
+    padding: 0;
+  }
+}
+
+/* line 42, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+div.rev-lines.columns {
+  background-color: rgba(50, 50, 50, 0.8);
+  border-radius: 10px;
+  border: 0 solid #000000;
+  padding: 10px 20px 30px 20px;
+}
+@media screen and (min-width: 768px) {
+  /* line 48, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+  div.rev-lines.columns.col-md-4 {
+    width: 31%;
+    margin: 1% 1%;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 54, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+  div.rev-lines.columns.col-sm-12 {
+    width: 90%;
+    margin: 30px 15px;
+  }
+}
+
+/* line 61, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.description {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  font-size: .9em;
+}
+
+/* line 68, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.note {
+  padding: 20px;
+  font-style: italic;
+}
+
+/* line 73, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.price {
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid #fff;
+}
+
+/* line 78, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.details a {
+  font-weight: normal;
+}
+/* line 80, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.details a:hover {
+  font-weight: bold;
+}
+/* line 83, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.details a:visited {
+  color: #fff;
+}
+
+/* line 88, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+h4.details {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+
+/* line 93, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.btn.btn-default {
+  padding: 0px 60px;
+  text-transform: uppercase;
+}
+
+/* line 98, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.btn.btn-new {
+  padding: 10px 60px;
+  font-family: poiret-one, sans-serif;
+  font-size: 1.1em;
+  border: 1px solid #fff;
+  background-color: none;
+  border-radius: 5px;
+  transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+}
+/* line 108, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.btn.btn-new a {
+  color: #fff;
+}
+/* line 110, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.btn.btn-new a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 115, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.btn.btn-new:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+  border: 1px solid rgba(50, 50, 50, 0.8);
+}
+
+/* line 121, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+input, textarea {
+  color: #323232;
+}
+
+/* line 127, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.container.show,
+.container.edit-form {
+  width: 60%;
+  margin-top: 80px;
+  padding: 30px 30px 15px;
+  text-align: left;
+  background-color: rgba(128, 113, 130, 0.9);
+  border-radius: 15px;
+  border: 0px solid #000000;
+}
+/* line 136, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.container.show h4,
+.container.edit-form h4 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+/* line 141, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.container.show .field input,
+.container.edit-form .field input {
+  width: 100%;
+}
+/* line 144, /Users/joannawinchester/my_new_app/app/assets/stylesheets/products.scss */
+.container.show .field textarea,
+.container.edit-form .field textarea {
+  width: 100%;
+  height: 60px;
+}
+/* line 1, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: poiret-one, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 9, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: poiret-one, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 15, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 21, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 24, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+
+/* line 35, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 40, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 44, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 50, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 58, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 69, /Users/joannawinchester/my_new_app/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+@font-face {
+  font-family: 'Nickainley';
+  src: url(/assets/Nickainley-Normal-56009d65186c25d40f91b94b786830838a33db94e2cc4871f3aa101eb8cfff64.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 29, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+body {
+  font: poiret-one, sans-serif;
+  color: #fff;
+  font-size: 1.8em;
+  background: url(/assets/knit-869221_1920-0fe7c20d68e7554c558a090eff88dbe6f3da269679d901c5e1432d5d553c4062.jpg) no-repeat center center fixed;
+  text-align: center;
+}
+
+/* line 37, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h1,
+h2,
+h3 {
+  font: 100% "Nickainley", sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 43, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 43, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  h1 {
+    font-size: 6em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 52, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 52, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* line 61, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h3 {
+  font-size: 2em;
+}
+
+/* line 65, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h4 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* ----- NAVIGATION ----- */
+/* line 73, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.nav {
+  position: fixed;
+  background-color: rgba(128, 113, 130, 0.9);
+  height: 60px;
+  width: 100%;
+  top: 0;
+}
+/* line 79, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.nav .menu {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  /* line 79, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .nav .menu {
+    text-align: right;
+  }
+  /* line 85, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .nav .menu:last-child {
+    margin-right: 20px;
+  }
+}
+/* line 88, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.nav .menu_item li {
+  height: 100%;
+  display: inline-block;
+  padding: 10px 17px;
+  transition: all 500ms ease-in;
+}
+/* line 93, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.nav .menu_item li:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+/* line 97, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.search-form {
+  margin: 5px 10px;
+}
+/* line 99, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.search-form input#q {
+  top: -5px;
+}
+/* line 102, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.search-form input[type="submit"] {
+  display: inline-block;
+  background: url("search.png") no-repeat center center;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border: none;
+}
+
+/* line 111, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+div.menu_item.navbar-form.navbar-right {
+  padding-top: 0;
+  margin: 0;
+  box-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  /* line 111, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  div.menu_item.navbar-form.navbar-right {
+    margin-top: 13px;
+  }
+}
+
+/* line 120, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+ul.nav.pull-left {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  left: 10px;
+}
+/* line 125, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+ul.nav.pull-left li.login a {
+  height: 60px;
+  color: #fff;
+  background-color: #807182;
+  padding-top: 20px;
+  transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+}
+/* line 133, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+ul.nav.pull-left li.login a:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+}
+
+/* ----- JUMBOTRON ----- */
+/* line 142, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.jumbotron {
+  background: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  /* line 142, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .jumbotron {
+    margin-top: 75px;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 142, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .jumbotron {
+    margin-top: 125px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 153, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .jumbotron h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 153, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .jumbotron h1 {
+    font-size: 6em;
+  }
+}
+
+/* ----- INDEX PAGE ----- */
+/* line 166, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.feature {
+  margin: 50px auto 100px;
+}
+/* line 168, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.feature p {
+  letter-spacing: 1.3px;
+  font-size: 1.1em;
+}
+
+/* line 174, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.circle.index {
+  background-color: rgba(128, 113, 130, 0.9);
+  height: 225px;
+  width: 225px;
+  border-radius: 100%;
+  border: 0px solid #000000;
+  margin: 35px auto 15px;
+  transition: all 500ms ease-in;
+}
+/* line 182, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.circle.index:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+}
+/* line 185, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.circle.index img {
+  margin: 15px auto;
+}
+
+/* line 190, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+p.book_lesson a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+}
+/* line 196, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+p.book_lesson a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ----- ABOUT PAGE ----- */
+/* line 205, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+div.container.about {
+  background-color: rgba(50, 50, 50, 0.8);
+  padding: 20px 75px;
+  border-radius: 15px;
+  border: 0px solid #000000;
+}
+/* line 210, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+div.container.about p {
+  font-size: 1.0em;
+}
+
+/* ----- CONTACT PAGE ----- */
+/* line 218, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.circle.contact {
+  height: 200px;
+  width: 200px;
+  margin: 100px auto 15px;
+  background-color: rgba(128, 113, 130, 0.9);
+  border-radius: 100%;
+  transition: all 500ms ease-in;
+  border: 0px solid #000000;
+}
+/* line 226, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.circle.contact:hover {
+  background-color: rgba(50, 50, 50, 0.8);
+}
+/* line 229, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.circle.contact img {
+  margin: 0 auto;
+}
+
+/* ----- CONTACT FORM ----- */
+/* line 236, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h1.contact-us {
+  margin-top: 150px;
+}
+
+/* line 240, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.form-group {
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 244, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .col-md-12.contact {
+    margin: 10px 5%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* line 244, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+  .col-md-12.contact {
+    width: 60%;
+    margin: 10px 20%;
+  }
+}
+
+/* line 255, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+button.contact {
+  background-image: none;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+/* line 260, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+button.contact > input {
+  padding: 0;
+  margin: 0;
+  background-image: none;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+}
+
+/* ----- THANK YOU ----- */
+/* line 272, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h1.thankyou {
+  margin-top: 150px;
+  margin-bottom: 75px;
+}
+
+/* line 276, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+p.thankyou {
+  margin-bottom: 50px;
+}
+
+/* line 280, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+button.thankyou {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 70px;
+}
+
+/* ----- LANDING PAGE - FEATURED PRODUCTS ----- */
+/* line 292, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner img {
+  margin: 25px auto 30px;
+}
+/* line 296, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.carousel-inner h2 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+
+/* line 302, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h4.link_to_product {
+  margin-bottom: 60px;
+}
+
+/* line 306, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.link_to_product a {
+  color: #fff;
+}
+
+/* ----- SIGN-IN ----- */
+/* line 314, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+h2.sign-in {
+  font-size: 4em;
+  margin: 65px auto 45px;
+}
+
+/* line 319, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.field.sign-in input {
+  display: inline-block;
+  border-radius: 7px;
+  padding: 7px 10px;
+  width: 300px;
+  box-shadow: none;
+  border: 0px;
+}
+
+/* line 328, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+div.remember {
+  margin: 25px auto;
+  font-size: 1.1em;
+}
+
+/* line 333, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.actions.sign-in input {
+  margin-bottom: 25px;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 7px;
+  box-shadow: none;
+  padding: 7px 30px;
+  transition: all 500ms ease-in;
+  -moz-transition: all 500ms ease-in;
+  -webkit-transition: all 500ms ease-in;
+}
+/* line 343, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.actions.sign-in input:hover {
+  background-color: #807182;
+  color: #fff;
+}
+
+/* line 349, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.sign-up {
+  margin-top: 25px;
+}
+
+/* line 353, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+div.sign-in.bottom-link {
+  margin-bottom: 200px;
+}
+/* line 355, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+div.sign-in.bottom-link a {
+  color: #fff;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+/* ----- FOOTER ----- */
+/* line 365, /Users/joannawinchester/my_new_app/app/assets/stylesheets/static_pages.scss */
+.footer.template {
+  background-color: rgba(128, 113, 130, 0.9);
+  margin-top: 150px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  padding-top: 10px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+.nav.nav-bar {
+	z-index: 1;
+}
