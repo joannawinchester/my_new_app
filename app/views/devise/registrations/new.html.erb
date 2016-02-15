@@ -4,6 +4,14 @@
   <%= devise_error_messages! %>
 
   <div class="field sign-in">
+    <%= f.text_field :first_name, placeholder: "First Name", required: true, autofocus: true %>
+  </div>
+
+  <div class="field sign-in">
+    <%= f.text_field :last_name, placeholder: "Last Name", required: true, autofocus: true %>
+  </div>
+
+  <div class="field sign-in">
     <%= f.email_field :email, placeholder: "Email", required: true, autofocus: true %>
   </div>
 

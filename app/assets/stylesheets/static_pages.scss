@@ -137,6 +137,16 @@ ul.nav.pull-left {
 }
 
 
+/* ----- NOTICES & ALERTS ----- */
+
+.notice-alert {
+	margin-top: 75px;
+	color: $primary-color;
+	p {
+		font-size: 1em;
+	}
+}
+
 /* ----- JUMBOTRON ----- */
 
 .jumbotron {
