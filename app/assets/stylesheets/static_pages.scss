@@ -19,7 +19,7 @@ $primary-color: #fff;
 $primary-transparent: rgba(255, 255, 255, 0.5);
 $accent-color: #807182;
 $accent-transparent: rgba(128, 113, 130, 0.9);
-$accent-transparent-100: rgba(128, 113, 130, 1);
+$accent-transparent-100: rgba(128, 113, 130, 0);
 $accent-color-2: rgba(50, 50, 50, 0.8);
 
 $transition: all 500ms ease-in;
@@ -142,8 +142,12 @@ ul.nav.pull-left {
 .notice-alert {
 	margin-top: 75px;
 	color: $primary-color;
-	p {
+	.alert.alert-info {
+		background-color: $primary-transparent;
+		color: $accent-color-2;
 		font-size: 1em;
+		border: none;
+		border-radius: 5px;
 	}
 }
 
