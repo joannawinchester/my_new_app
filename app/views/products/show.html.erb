@@ -1,26 +1,18 @@
-<div class="jumbotron">
-  <h1><%= @product.name %></h1>
-	<p id="notice"><%= notice %></p>
-</div>
+<p id="notice"><%= notice %></p>
 
 <div class="container show">
-  <h4>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </h4>
+  <div class="jumbotron product-details">
+    <h1 class="product-details"><%= @product.name %></h1>
+    <%= image_tag(@product.image_url, alt: "Product Image" )%>
+    <h2><%= @product.subtitle %></h2>
+  </div> 
 
-  <h4>
-    <strong>Subtitle:</strong>
-    <%= @product.subtitle %>
-  </h4>
-
-  <h4>
+  <!--<h4>
     <strong>Image url:</strong>
     <%= @product.image_url %>
-  </h4>
+  </h4>-->
 
   <h4>
-    <strong>Description:</strong>
     <%= @product.description %>
   </h4>
 
@@ -33,7 +25,18 @@
     <strong>Price:</strong>
     <%= @product.price %>
   </h4>
+
 </div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+
+<div>
+  <%= link_to 'Edit', edit_product_path(@product) %> |
+  <%= link_to 'Back', products_path %>
+</div>
+  
+
+<div class="container comment">
+  <div class="jumbotron comment">
+    <h2>Comments</h2>
+  </div>
+</div>
