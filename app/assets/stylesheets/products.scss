@@ -171,7 +171,15 @@ input, textarea {
 	color: #323232;
 }
 
-
+.pagination {
+	a, span {
+		padding: 5px;
+		border: 1px solid $primary-color;
+		&:visited {
+			color: $primary-color;
+		}
+	}
+}
 
 
 

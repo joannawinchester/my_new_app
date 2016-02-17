@@ -41,5 +41,6 @@
     <h2>Comments</h2>
     <%= render 'new_comment' %>
     <%= render 'comments' %>
+    <%= will_paginate @comments, :page_links => false %>
   </div>
 </div>
