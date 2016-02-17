@@ -173,6 +173,7 @@ input, textarea {
 
 .pagination {
 	a, span {
+		color: $primary-color;
 		padding: 5px;
 		border: 1px solid $primary-color;
 		&:visited {
