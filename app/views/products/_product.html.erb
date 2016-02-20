@@ -4,7 +4,7 @@
   <%= image_tag(product.image_url, alt: "Product Image" )%>
   <p class="description"><%= product.description %></p>
   <p class="note"><%= product.note %></p>
-  <h4 class="price">$<%= product.price %></h4>
+  <h4 class="price">$<%= product.price.to_i / 100.to_i %></h4>
   <h4 class="details"><%= link_to 'Details', product_path(product) %></h4>
   <footer class="rev-lines footer">
     <small class="text-muted"><%= link_to 'Show', product_path(product) %></small>
