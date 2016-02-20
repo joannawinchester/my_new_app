@@ -9,5 +9,5 @@ class Ability
     else
     	can :read, Comment
     end
-
+  end
 end
