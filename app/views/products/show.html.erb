@@ -24,8 +24,14 @@
 
   <h4>
     <strong>Price:</strong>
-    <%= @product.price %>
+    <%= number_to_currency(@product.price.to_i / 100.to_i) %>
   </h4>
+
+  <div class="pay-with-card">
+    <%= form_tag "/payments/create" do %>
+      <%= render partial: "shared/stripe_checkout_button" %>
+    <% end %>
+  </div>
 
 </div>
 
@@ -34,6 +40,9 @@
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', products_path %>
 </div>
+
+
+
   
 
 <div class="container product comment">
