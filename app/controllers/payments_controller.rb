@@ -16,12 +16,12 @@ class PaymentsController < ApplicationController
 			
 			redirect_to product_path(@product)
 			
-			if charge.paid
+			if charge.paid do
 				Order.create(
 					:product_id => @product.id
 					:user_id => @user.id
 					:total => @product.price.to_i
-					)
+				)
 			end
 
 		rescue Stripe::CardError => e
