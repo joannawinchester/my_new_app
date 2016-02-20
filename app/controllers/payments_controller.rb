@@ -16,10 +16,10 @@ class PaymentsController < ApplicationController
 			
 			redirect_to product_path(@product)
 			
-			if charge.paid do
+			if charge.paid
 				Order.create(
-					:product_id => @product.id
-					:user_id => @user.id
+					:product_id => @product.id,
+					:user_id => @user.id,
 					:total => @product.price.to_i
 				)
 			end
