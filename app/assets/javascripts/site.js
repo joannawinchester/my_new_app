@@ -9,8 +9,8 @@ $(document).on('ready page:load', function(){
 	$('.container-slip').sliphover({
 		caption: 'data_caption',
 		target: 'img',
-		fontColor: '#fff',
-		backgroundColor: 'rgba(50, 50, 50, 0.8)',
+		fontColor: 'rgba(50, 50, 50, 0.9)',
+		backgroundColor: 'rgba(258, 258, 258, 0.8)',
 		textAlign: 'center',
 		verticalMiddle: true,
 	});
