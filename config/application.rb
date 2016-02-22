@@ -20,7 +20,7 @@ module Nameofapp
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    config.force_ssl = true
+    # config.force_ssl = true
     config.filter_parameters << :password
     config.filter_parameters << :email
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
